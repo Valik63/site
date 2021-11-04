@@ -1,0 +1,98 @@
+nav {
+    width:1280px;
+    margin: 0 auto;
+  }
+  
+  nav:before{
+    content:''; 
+    display:block;
+    height:50px;
+    width:100%;
+    background:#000;
+    position:absolute;
+    left:0;
+    z-index:-1;
+  }
+  
+  ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    height:50px;
+  }
+  
+  ul li{
+    float:left;
+  }
+  
+  ul li a{
+    color:#fff;
+    display:block;
+    height:50px;
+    padding:0 30px;
+    text-transform:uppercase;
+    text-decoration:none;
+    line-height:50px;
+  }
+  
+  ul li a:hover{
+    background:#ffffff;
+  }
+
+
+
+
+  header {
+    height: 100vh;
+    background: url('../image/ship2.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.12);
+}
+
+
+
+
+.col-sm-8 {
+  position:absolute;
+  width:100%;
+  top:20%;
+  text-align: center;
+	font-family: FreeMono, monospace;
+	font-size: 15px;
+	color: #FFFFFF;
+	text-shadow: 
+		-0   -2px 2px #000000,
+		 0   -2px 2px #000000,
+		-0    2px 2px #000000,
+		 0    2px 2px #000000,
+		-2px -0   2px #000000,
+		 2px -0   2px #000000,
+		-2px  0   2px #000000,
+		 2px  0   2px #000000,
+		-1px -2px 2px #000000,
+		 1px -2px 2px #000000,
+		-1px  2px 2px #000000,
+		 1px  2px 2px #000000,
+		-2px -1px 2px #000000,
+		 2px -1px 2px #000000,
+		-2px  1px 2px #000000,
+		 2px  1px 2px #000000,
+		-2px -2px 2px #000000,
+		 2px -2px 2px #000000,
+		-2px  2px 2px #000000,
+		 2px  2px 2px #000000,
+		-2px -2px 2px #000000,
+		 2px -2px 2px #000000,
+		-2px  2px 2px #000000,
+		 2px  2px 2px #000000;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Reservations</a></li>
+            <li><a href="">Contacts</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Sign in</a></li>
+
+
+        </ul>
+
+    </nav>
+  
+<header id="header">
+    <div class="center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="formWrapper">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                              </div>
+                              <div class="row">
+                                  <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                        
+
+                                      </div>
+                                      
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                        
+                                        
+                                      </div>
+                                      
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="rooms">Rooms</label>
+                                        <select name="rooms" id="rooms">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+
+                                        </select>                                        
+                                      </div>
+
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="adults">Adults</label>
+                                        <select name="adults" id="adults">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                        </select>
+                                        
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="children">Children</label>
+                                        <select name="children" id="children">
+                                            <option value="">0</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                        </select>
+                                        
+                                      </div>
+                                  </div>
+                              </div>
+                              <button onclick="swa()" type="button">Reservate</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <h1>Reserve the best seats today and get a 10% discount on your trip</h1>
+                </div>
+         
+            </div>
+        </div>
+
+    </div>
+
+    <div id="overlay">
+        <div class="popup">
+          <button class="close" title="Закрыть окно" onclick="swa2()"></button>
+          <p class="zag">Thanks...</p>
+          <p>You have successfully booked your seats</p>
+        </div>
+      </div>
+      
+</header>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+
+    <script>
+        var b = document.getElementById('overlay');
+        function swa(){
+            b.style.visibility = 'visible';
+            b.style.opacity = '1';
+            b.style.transition = 'all 0.7s ease-out 0s';
+        }
+        function swa2(){
+            b.style.visibility = 'hidden';
+            b.style.opacity = '0';
+        }
+        </script>
+
+</body>
+</html>
